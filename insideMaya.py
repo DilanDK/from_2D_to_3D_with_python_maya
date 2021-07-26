@@ -3,7 +3,7 @@ import json
 
 # Location where is picture saved
 picture_path = 'C:\Users\Dilan\Documents\GitHub\\from_2D_to_3D_with_python_maya'
-with open('C:\Users\Dilan\Documents\GitHub\\from_2D_to_3D_with_python_maya\\vertex_y_position.json') as json_file:
+with open('C:\Users\Dilan\Documents\GitHub\\from_2D_to_3D_with_python_maya\\vertices_position.json') as json_file:
     coordinates_data = json.load(json_file)
 
 

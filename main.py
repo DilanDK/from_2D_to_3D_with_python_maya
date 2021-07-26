@@ -158,7 +158,7 @@ def get_coord_from_img(max_img_size, image_path, max_vertices_height):
 
 
 # Getting number of columns, rows and storing all faces coordinates in the FaceLinkedList
-nr_cols, nr_rows = get_coord_from_img((300, 300), 'stadium.png', 80)
+nr_cols, nr_rows = get_coord_from_img((350, 350), 'city4.jpg', 280)
 
 # Writing all faces coordinates in to the dict, key is XZ faces pivot point coordinates,
 # Value is faces vertices coordinates
@@ -169,5 +169,7 @@ for z in range(0, nr_cols):
         all_vertices['{x}:{z}'.format(x=x, z=z)] = coordinates
 
 # Writing all information in to the file
-with open('vertex_y_position.json', 'w') as f:
+with open('vertices_position.json', 'w') as f:
     json.dump(all_vertices, f)
+
+f.close()
